@@ -18,7 +18,7 @@
 
 ## 🛠️ Instalação e execução
 
-1. Teenha o React Native e o React Native CLI instalados;
+1. Tenha o React Native e o React Native CLI instalados;
 2. Faça um clone desse repositório;
 3. Pelo terminal, rode `yarn` para instalar as dependências;
 4. Pelo terminal, rode `npx react-native start` para inicializar a Metro Bundler;
