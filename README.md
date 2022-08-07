@@ -36,7 +36,7 @@ O aplicativo conta com funções de listagem, cadastro, edição e deleção de 
 
 `Cadastrar` - Página para cadastro de novos pets, utilizando `react-native-image-picker` para a seleção de imagens. Atualmente, as fotos dos pets são salvas no banco de dados em base64 (não ideal). Isso será atualizado no futuro para melhor desempenho do aplicativo.
 
-## 🖋️ Editar
+### 🖋️ Editar
 
 `Editar` - Página contando com opções de edição e deleção para cada pet.
 
