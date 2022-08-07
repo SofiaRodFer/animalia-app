@@ -5,7 +5,7 @@
 <h3 align="center">Animalia: Gestão animal</h3>
 
 <p align="center">
-  <a href="#-instalação-e-execução">Instação e execução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-instalação-e-execução">Instalação e execução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-funcionamento">Funcionamento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-objetivos">Objetivos</a>
 </p>
@@ -26,27 +26,23 @@
 
 ## 🚀 Funcionamento
 
-A API possui caminhos de POST para usuários e GET, POST, PUT, PATCH e DELETE para os _todos_.
+O aplicativo conta com funções de listagem, cadastro, edição e deleção de pets. A aplicação foi feita em React Native, utilizando SQLite para armazenamento dos dados.
 
-### 🧒 Rotas de usuário ('/users')
+### 🏠 Home
 
-`POST` - Na rota '/users', o método POST faz a inclusão do usuário no sistema. É necessário passar um `name` e `username` no corpo da requisição. Essa rota gera um ID aleatório utilizando a biblioteca UUID (v4), que fica atrelado ao usuário.
+`Home` - Lista de pets cadastrados, contando com nome, raça, gênero, idade e foto do pet.
 
-### 📝 Rotas de _todos_ ('/todos')
+### ✏️ Cadastrar
 
-`POST` - Esse método recebe os parâmetros `title` e `deadline` no corpo da requisição e `username` nos headers. O _todo_ será adicionado no array de _todos_ do `username` passado. O parâmetro `deadline` precisa estar no formato yyyy-MM-dd.
+`Cadastrar` - Página para cadastro de novos pets, utilizando `react-native-image-picker` para a seleção de imagens. Atualmente, as fotos dos pets são salvas no banco de dados em base64 (não ideal). Isso será atualizado no futuro para melhor desempenho do aplicativo.
 
-`GET` - Esse método recebe apenas o parâmetro `username` nos headers, e retorna todos os _todos_ atrelados a esse usuário.
+## 🖋️ Editar
 
-`PUT` - A rota 'todos/id' recebe os parâmetros `title` e `deadline` no corpo da requisição e `username` nos headers. Os parâmetros passados no corpo substituirão os já existentes no _todo_ selecionado através do ID presente na URL. O ID pode ser visualizado através do método `GET`.
-
-`PATCH` - A rota 'todos/id/done' recebe apenas o parâmetro `username` nos headers. Esse método apenas muda o valor da key `done` para true, ou seja, marca o _todo_ selecionado como concluído.
-
-`DELETE` - A rota 'todos/id' recebe apenas o parâmetro `username` nos headers. Esse método exclui o _todo_ selecionado.
+`Editar` - Página contando com opções de edição e deleção para cada pet.
 
 ## 💻 Objetivos
 
-Essa API me ajudou a entender mais a fundo os conceitos de requisições HTML e servidores Express. Não é um projeto muito extenso, mas tentar desvendar a utilização do node me deu uma boa base do funcionamento de APIs maiores.
+Esse aplicativo foi feito como atividade na matéria Projeto Integrador Mobile, no Curso Técnico de Informática para Internet da instituição Senac. O objetivo é servir como exercício dos conteúdos ensinados.
 
 ---
 
