@@ -1,0 +1,17 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Aloja-Light.otf",
+      "sha1": "57e774114999e2fdd6375a411ff3653aa385c7db"
+    },
+    {
+      "path": "assets/fonts/Aloja-Light.ttf",
+      "sha1": "57e774114999e2fdd6375a411ff3653aa385c7db"
+    },
+    {
+      "path": "assets/fonts/Varela-Round.ttf",
+      "sha1": "1b37aa89d918bc1c81945712601bd4a842b035ca"
+    }
+  ]
+}
